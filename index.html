@@ -230,9 +230,9 @@
                 <div class="contact__container bd-grid">
                     <form  action="https://api.web3forms.com/submit" method="post" class="contact__form">
                         <input type="hidden" name="access_key" value="6c99e3c3-7ccd-4385-a067-9158f8c2a572">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="text" placeholder="Name" class="contact__input" name="name" required>
+                        <input type="mail" placeholder="Email" class="contact__input" name="email" required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" name="message" required></textarea>
                         <input type="submit" value="Send" class="contact__button button">
                         <div id="result"></div>
                     </form>
